@@ -1,3 +1,6 @@
+import { OnInit } from "@angular/core";
+import { MessageService } from "../_services/message.service";
+
 export interface Pagination {
     currentPage: number,
     itemsPerPage: number,
@@ -8,4 +11,9 @@ export interface Pagination {
 export class PaginatedResult<T> {
     result?: T;
     pagination?: Pagination;
+   
+    
+
+
+
 }
